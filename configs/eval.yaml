@@ -1,0 +1,53 @@
+data:
+  data_path: dataset/data.jsonl
+  visual_set: dataset/visual-set
+  output_dir: outputs
+
+image_names:
+  - web
+  - latex
+  - excel
+  - custom
+  - noise
+  - structural
+  - partial
+  - missing
+  - screenshot
+  - photo
+
+api:
+  base_url: https://api.openai.com/v1
+  api_key_env: OPENAI_API_KEY
+  timeout: 180
+  max_concurrent: 8
+  max_tokens: 16000
+
+judge:
+  enabled: false
+  model: gpt-5-mini
+  max_concurrent: 8
+  max_tokens: 1024
+
+vllm:
+  model_root_env: MODEL_ROOT
+  batch_size: 16
+  max_model_len: 12288
+  max_tokens: 8192
+  gpu_memory_utilization: 0.9
+
+models:
+  gpt-5.4:
+    backend: api
+    model: gpt-5.4
+    max_tokens: 16000
+
+  Qwen/Qwen2.5-VL-7B-Instruct:
+    backend: vllm
+    model_path: ${MODEL_ROOT}/Qwen/Qwen2.5-VL-7B-Instruct
+    tensor_parallel_size: 1
+    trust_remote_code: false
+    max_model_len: 12288
+    sampling:
+      temperature: 0.0
+      max_tokens: 8192
+      repetition_penalty: 1.05

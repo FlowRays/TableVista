@@ -1,0 +1,8 @@
+PyYAML>=6.0
+openai>=1.51.0
+tqdm>=4.65
+Pillow>=9.0.0
+numpy>=1.20.0
+playwright==1.57.0
+opencv-python-headless
+scipy

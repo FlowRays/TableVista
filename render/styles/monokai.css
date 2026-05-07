@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: #272822;
+    color: #f8f8f2;
+}
+
+table {
+    border-collapse: collapse;
+    background: #272822;
+    color: #f8f8f2;
+    border: 1px solid #3e3d32;
+}
+
+th {
+    background: #3e3d32;
+    color: #a6e22e;
+    font-weight: 600;
+    border: 1px solid #3e3d32;
+    padding: 0.5em;
+}
+
+td {
+    border: 1px solid #3e3d32;
+    padding: 0.5em;
+}
+
+table a {
+    color: #66d9ef;
+    text-decoration: none;
+}

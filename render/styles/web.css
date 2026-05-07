@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: #f8f9fa;
+    border: 1px solid #a2a9b1;
+}
+
+th {
+    background-color: #eaecf0;
+    font-weight: bold;
+    padding: 0.5em;
+    border: 1px solid #a2a9b1;
+}
+
+td {
+    padding: 0.5em;
+    border: 1px solid #a2a9b1;
+}
+
+table a {
+    color: #3366cc;
+    text-decoration: none;
+}

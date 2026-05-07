@@ -1,0 +1,28 @@
+data:
+  input: dataset/data.jsonl
+  output: outputs/visual-set
+
+render:
+  limit: 0
+  start: 0
+  overwrite: false
+  base_seed: 42
+  viewport_width: 1000
+  viewport_height: 800
+  playwright_browsers_path: auto
+
+  image_names:
+    - web
+    - latex
+    - excel
+    - custom
+    - noise
+    - structural
+    - partial
+    - missing
+    - screenshot
+    - photo
+
+parallel:
+  num_shards: 1
+  shard_index: null
