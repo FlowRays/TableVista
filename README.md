@@ -1,7 +1,7 @@
 # TableVista
 
 <p align="center">
-    🤗 <a href="https://huggingface.co/TableVista">Hugging Face</a>&nbsp&nbsp | &nbsp&nbsp📄 <a href="https://arxiv.org/abs/XXXX.XXXXX">arXiv</a>
+    🤗 <a href="https://huggingface.co/datasets/TableVista/TableVista">Hugging Face</a>&nbsp&nbsp | &nbsp&nbsp📄 <a href="https://arxiv.org/abs/2605.05955">arXiv</a>
 </p>
 
 ## 📖 Abstract
@@ -30,7 +30,7 @@ playwright install chromium
 
 ### Dataset
 
-Download the dataset from Hugging Face and place it under `dataset/`.
+Download the dataset from [Hugging Face](https://huggingface.co/datasets/TableVista/TableVista) and place it under `dataset/`.
 
 ```text
 dataset/
@@ -78,5 +78,13 @@ python scripts/eval.py --config configs/eval.yaml --model Qwen/Qwen2.5-VL-7B-Ins
 If you find TableVista useful in your research, please cite our paper:
 
 ```bibtex
-arxiv todo
+@misc{yang2026tablevistabenchmarkingmultimodaltable,
+      title={TableVista: Benchmarking Multimodal Table Reasoning under Visual and Structural Complexity},
+      author={Zheyuan Yang and Liqiang Shang and Junjie Chen and Xun Yang and Chenglong Xu and Bo Yuan and Chenyuan Jiao and Yaoru Sun and Yilun Zhao},
+      year={2026},
+      eprint={2605.05955},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2605.05955},
+}
 ```
